@@ -95,7 +95,7 @@ public class MedicoDAOImpl implements GenericDAO {
 
 		Medico medico = (Medico) object;
 		PreparedStatement stmt = null;
-		String sql = "INSERT INTO medico (descricao) VALUES (?)";
+		String sql = "INSERT INTO medico (nome, especialidade, crm, isPlantao) VALUES (?)";
 
 		try {
 			stmt = conn.prepareStatement(sql);
